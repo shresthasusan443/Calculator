@@ -1,0 +1,91 @@
+/* default style control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* body section starts */
+  body {
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 14, 14);
+  }
+  /* body section end*/
+  
+  /* calculator section starts */
+  .calculator {
+    background-color: rgb(116, 112, 112);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    transition: all 0.3s ease;
+  }
+  .calculator:hover {
+    background-color: rgb(68, 67, 67);
+  }
+  /* calculator section end */
+  
+  /* input field section starts */
+  input {
+    height: 60px;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    background-color: rgb(224, 215, 215);
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+  }
+  input:focus {
+    background-color: rgb(41, 35, 35);
+  }
+  /* input field section ends*/
+  
+  /* button section starts */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  button {
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    font-weight: 800;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: azure;
+  }
+  button:active {
+    background-color: aquamarine;
+  }
+  button.clear {
+    background-color: rgb(158, 24, 24);
+  }
+  button.clear:hover {
+    background-color: rgb(185, 26, 26);
+  }
+  button.equal{
+      background-color: orange ;
+  }
+  button.equal:hover{
+      background-color: rgb(146, 98, 7);
+  }
+  button.digit{
+    background-color: rgb(85, 211, 169);
+  }
+  /* button section ends */
+  
